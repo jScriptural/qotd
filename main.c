@@ -10,7 +10,7 @@
 #endif
 #include "utils.h"
 
-#define QUOTEDB "./qotd.db"
+#define QUOTEDB "/run/qotd.db"
 #define MAXQUOTELEN 512
 #define EOL 10
 

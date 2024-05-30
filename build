@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+#Automate some set up steps.
+
+
+#move qotd.db to /run/
+mv qotd.db /run/
+
+
+#compilation
+cc -o qotd main.c utils.c
+
+
+#move executable to one of $PATH directories(last dir)
+mv qotd ${PATH##*:}
+
+
